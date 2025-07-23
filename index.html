@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Im@Website - Home</title>
+    
+    <!-- Material Icons (untuk ikon section) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header role="banner" class="header">
+        <div class="container header-container">
+            <a href="index.html" class="brand" aria-label="Ima homepage">PanPann</a>
+            <nav role="navigation" aria-label="Primary navigation" class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" tabindex="0">Home</a></li>
+                    <li><a href="news.html" class="nav-link" tabindex="0">News</a></li>
+                    <li><a href="Galeri Foto.html" class="nav-link">Foto</a></li>
+                    <li><a href="Vidio.html" class="nav-link" tabindex="0">Video</a></li>
+                    <li><a href="#about" class="nav-link" tabindex="0">About</a></li>
+                    <li><a href="#contact" class="nav-link" tabindex="0">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Welcome to PanPann Web</h1>
+                <p>Your primary source for the latest information in news, photo collections, videos, and innovations</p>
+                <a href="#" class="btn-primary" role="button">Explore Now</a>
+            </div>
+        </section>
+
+        <section class="features container" style="margin-left: 12vw; margin-right: 0;">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="features-grid">
+                <article class="feature-card" tabindex="0">
+                    <span class="material-icons feature-icon" aria-hidden="true">newspaper</span>
+                    <h3>Latest Tech News</h3>
+                    <p>Stay up-to-date with in-depth coverage of the computer science industry and technology trends.</p>
+                </article>
+                <article class="feature-card" tabindex="0">
+                    <span class="material-icons feature-icon" aria-hidden="true">school</span>
+                    <h3>Expert Tutorials</h3>
+                    <p>Learn programming, system design, and much more with detailed, easy-to-follow tutorials.</p>
+                </article>
+                <article class="feature-card" tabindex="0">
+                    <span class="material-icons feature-icon" aria-hidden="true">forum</span>
+                    <h3>Community Support</h3>
+                    <p>Join discussions with fellow tech enthusiasts and professionals to solve problems and share knowledge.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Deskripsi Web -->
+        <section id="about" class="container" style="margin-bottom:64px; scroll-margin-top:80px;">
+            <h2 class="section-title">Tentang Website Ini</h2>
+            <div style="max-width:700px; margin:0 auto; color:#94a3b8; font-size:1.15rem; line-height:1.7; background:rgba(30,41,59,0.7); border-radius:18px; padding:32px 24px; box-shadow:0 8px 32px rgba(99,102,241,0.10);">
+                <p>
+                    <strong>PanPann Web</strong> adalah platform modern yang menyediakan informasi teknologi terkini, galeri foto, video inspiratif, dan tutorial pemrograman. Website ini dirancang untuk memudahkan pengguna mendapatkan berita terbaru, belajar coding, serta berbagi pengetahuan bersama komunitas. 
+                </p>
+                <p>
+                    Dengan tampilan profesional dan navigasi yang intuitif, PanPann Web cocok untuk pelajar, mahasiswa, maupun profesional IT yang ingin terus berkembang di era digital. Semua konten disajikan secara responsif dan mudah diakses dari berbagai perangkat.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="container" style="margin-bottom:64px; scroll-margin-top:80px;">
+            <h2 class="section-title">Contact</h2>
+            <div style="max-width:700px; margin:0 auto; background:rgba(30,41,59,0.7); border-radius:18px; padding:32px 24px; box-shadow:0 8px 32px rgba(99,102,241,0.10);">
+                <form style="display:flex; flex-direction:column; gap:18px;">
+                    <label for="name" style="text-align:left; color:#c7d2fe; font-weight:600;">Nama</label>
+                    <input type="text" id="name" name="name" required style="padding:10px; border-radius:8px; border:none; background:#1e293b; color:#e2e8f0; font-size:1rem;">
+                    
+                    <label for="email" style="text-align:left; color:#c7d2fe; font-weight:600;">Email</label>
+                    <input type="email" id="email" name="email" required style="padding:10px; border-radius:8px; border:none; background:#1e293b; color:#e2e8f0; font-size:1rem;">
+                    
+                    <label for="message" style="text-align:left; color:#c7d2fe; font-weight:600;">Pesan</label>
+                    <textarea id="message" name="message" rows="4" required style="padding:10px; border-radius:8px; border:none; background:#1e293b; color:#e2e8f0; font-size:1rem;"></textarea>
+                    
+                    <button type="submit" style="padding:12px 0; border-radius:8px; background:linear-gradient(135deg,#6366f1,#4ade80); color:#fff; font-weight:700; font-size:1.1rem; border:none; cursor:pointer;">Kirim Pesan</button>
+                </form>
+                <div style="margin-top:24px; color:#94a3b8; font-size:1rem;">
+                    <p>Atau hubungi kami melalui email: <a href="mailto:info@panpannweb.com" style="color:#4ade80;">info@panpannweb.com</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container footer-content">
+            <p>&copy; 2025 Im@website. All rights reserved.</p>
+            <nav aria-label="Social media">
+                <a href="#" class="social-link" aria-label="Visit Ima Tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Visit Ima Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Visit Ima Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
